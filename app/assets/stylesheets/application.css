@@ -1,0 +1,63 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header Styles */
+  table thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-weight: bold;
+  }
+
+  /* Body Row Styles */
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Cell Styles */
+  table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+
+  /* Button Styles */
+  table td button, table td a {
+    text-decoration: none;
+    color: #4CAF50;
+    padding: 6px 12px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Button Hover Effect */
+  table td button:hover, table td a:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Delete Button Style */
+  table td a[data-method="delete"] {
+    color: #ff5252;
+    border-color: #ff5252;
+  }
+
+  table td a[data-method="delete"]:hover {
+    background-color: #ff5252;
+    color: white;
+  }

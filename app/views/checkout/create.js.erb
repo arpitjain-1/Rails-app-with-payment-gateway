@@ -1,0 +1,10 @@
+// app/views/checkout/create.js.erb
+var stripe = Stripe("<%= Rails.application.credentials[:stripe][:public] %>");
+
+stripe.redirectToCheckout({
+  sessionId: '<%= @session.id %>'
+}).then(function(result) {
+  if (result.error) {
+    console.error("Stripe checkout error:", result.error.message);
+  }
+});
